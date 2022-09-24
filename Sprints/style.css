@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Genos:wght@300;400&family=Karantina:wght@300&family=Quicksand:wght@300;400&family=Zen+Kurenaido&display=swap');
+
+/*
+font-family: 'Alumni Sans', sans-serif;
+font-family: 'Genos', sans-serif;
+font-family: 'Karantina', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Zen Kurenaido', sans-serif;
+*/
+
+:root{
+    --bg-padrao:#F5F7FB;
+    --font: 'Quicksand', sans-serif;
+    --bg-destaque:#35475E;
+    --cor-padrao: #47607E;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--bg-padrao);
+    font-family: var(--font);
+    
+}
+
+header{
+
+    display: flex;
+    background-color: var(--bg-destaque);
+    align-items: center;
+}
+header img{
+    margin-left: 1.5rem;;
+}
+
+#titulo{
+    color: var(--bg-padrao);
+    text-transform: uppercase;
+    font-family: 'Karantina', cursive;
+    font-size: 3.5rem;
+    margin-left: 5rem;
+    letter-spacing: 1rem;
+    
+}
+.menu-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: var(--bg-destaque);
+    width: 9rem;
+    height:full;
+    font: #fff;
+    position: relative;
+    /* box-shadow: inset -10px 0px 100px #47607E;  */     
+    
+}
+
+.menu-container a{
+    color: #fff;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 44px;
+    text-shadow: 0px 4px 4px #000;
+    text-decoration: none;
+    
+
+}
+.menu-container a:hover{
+    color: #fff;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 44px;
+    text-shadow: 0px 4px 4px #8190a3;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    margin: .6rem ;
+    text-transform: uppercase;
+            
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.organizer{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 1rem;
+}
+
+.dashboard{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5rem;
+    margin-top: .5rem;
+    width: 100%;
+
+}
+.dashboard-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+h2{
+letter-spacing: 0.3rem;
+text-transform: uppercase;
+}
+/* ---- INÍCIO CSS CAIXA GRANDE COM FOTO ----*/
+.big-box{
+background-color: #fff;
+width: 190px;
+margin: 1rem;
+padding: 10px;
+}
+.big-box h3{
+    text-align: center;
+    margin:3px; 
+    text-transform: uppercase;
+}
+.big-box h4{
+    text-align: center;
+    margin:3px; 
+    text-transform: uppercase;
+}
+.big-box p{
+    text-align: center;
+    margin:3px;
+}
+.big-box img{
+    width: 190px;
+}
+.big-inbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.big-inbox-content{ 
+ display: flex;
+ flex-direction: column;
+}
+
+.big-inbox-content p{
+font-size: 1rem;
+}
+
+.container {
+    height: 10px;
+    background-color: #CCC;
+    position: relative;
+}
+.container .progress-bar{
+   position: absolute;
+   height: 100%;
+   background-color: #2b3ee7;
+   animation: progress-animation 5s infinite step-start;
+}
+@keyframes progress-animation{
+    0% { width: 0%; } 
+    100% { width: 70%}
+}
+/* ---- TÉRMINO CSS CAIXA GRANDE COM FOTO ----*/
+
+.box-pq{
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #fff;
+    width: 210px;
+    height: 150px;
+    margin: 1rem;
+    padding: 10px;
+    align-items: center; */
+
+    background-color: #fff;
+    width: 210px;
+    height: 150px;
+    margin: 1rem;
+    padding: 10px;
+    
+
+}
+.box-pq h3{
+    text-align: center;
+    margin:3px; 
+    text-transform: uppercase;
+}
+.box-pq h4{
+    text-align: center;
+    margin:3px; 
+    text-transform: uppercase;
+}
+.box-pq p{
+    display: flex;
+    width: 100%;
+    display: flex;
+    font-size: 1rem;
+    align-content : center;
+}
+.box-pq img{
+    display: flex;
+    align-self: center;
+    
+}
+.material-symbols-outlined {
+
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48;
+    
+  }
+ 
+  .box-med{
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #fff;
+    width: 210px;
+    height: 150px;
+    margin: 1rem;
+    padding: 10px;
+    align-items: center; */
+
+    background-color: #fff;
+    width: 400px;
+    height: 250px;
+    margin: 1rem;
+    padding: 10px;
+    
+
+}
+.box-med h3{
+    text-align: center;
+    margin:3px; 
+    text-transform: uppercase;
+}
+.box-med h4{
+    text-align: center;
+    margin:3px; 
+    text-transform: uppercase;
+}
+.box-med p{
+    display: flex;
+    width: 100%;
+    display: flex;
+    font-size: 1rem;
+    align-content : center;
+}
+.box-med img{
+    display: flex;
+    align-self: center;
+    
+}
+.container2 {
+    height: 10px;
+    background-color: #CCC;
+    position: relative;
+}
+.container2 .progress-bar{
+   position: absolute;
+   height: 100%;
+   background-color: #57e72b;
+   animation: progress-animation2 5s infinite step-start;
+}
+@keyframes progress-animation2{
+    0% { width: 0%; } 
+    100% { width: 30%}
+}
